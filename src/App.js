@@ -36,7 +36,15 @@ function YouToItem(props) {
       <div className="youtobe-footer">
         <img src="https://tse4.mm.bing.net/th?id=OIP.Ae_CSR5Bx1_HQbNtFghCJQHaEM&pid=Api&P=0&h=220" className="image-avatar" alt="" />
       </div>
-      <h2>Hahhaaaa</h2>
+      <div className="youtobe-avatar">
+        <img src={props.avatar}  alt="" />
+      </div>
+      <h2 className="avatar-title">
+        {props.title ||  "This is example of title "} 
+      </h2>
+      <h4 className="avatar-author">
+        {props.author ||  "This is example of author name "} 
+      </h4>
     </div>
   );
 }
