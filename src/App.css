@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+
+html{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+  line-height: normal;
+}
+label,
+button{
+cursor: pointer;
+text-decoration: none;
+display: block;
+max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;;
+  max-width: 100%;
+}
+.youtobe-list{
+  display: grid;
+  grid-template-columns: reprat(4,1fr);
+  grid-gap:25px;
+  padding: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.youtobe-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.youtobe-footer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:flex-start ;
+  gap:0 20px ;
+}
+.youtobe-avatar{
+  height: 100%;
+  width: 100%;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.youtobe-author{
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
