@@ -18,9 +18,15 @@ function Feature() {
   );
 }
 function App() {
+  // console.log(YouToBeDaTa);
   return (
     <div className="youtobe-list">
-
+    {YouToBeDaTa.map((item, index) => {
+      <YouToItem key={ item.id } image={item.image} avatar={item.avatar}></YouToItem>
+    
+    
+    })}
+{/* 
       <YouToItem image="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-T%E1%BA%BFt-sum-v%E1%BA%A7y.jpg" />
       <YouToItem image="https://antimatter.vn/wp-content/uploads/2022/06/anh-bau-troi-va-hoa.jpg" />
       <YouToItem image="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-T%E1%BA%BFt-sum-v%E1%BA%A7y.jpg" />
@@ -28,8 +34,8 @@ function App() {
       <YouToItem image="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-T%E1%BA%BFt-sum-v%E1%BA%A7y.jpg" />
       <YouToItem image="https://antimatter.vn/wp-content/uploads/2022/06/anh-bau-troi-va-hoa.jpg" />
       <YouToItem image="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-T%E1%BA%BFt-sum-v%E1%BA%A7y.jpg" />
-      <YouToItem image="https://antimatter.vn/wp-content/uploads/2022/06/anh-bau-troi-va-hoa.jpg" />
-
+      <YouToItem image="https://antimatter.vn/wp-content/uploads/2022/06/anh-bau-troi-va-hoa.jpg" /> */}
+      
     </div>
 
     
